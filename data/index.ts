@@ -240,5 +240,5 @@ export const socialMedia = [
     id: 3,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/aryan-seth-9190b1196/"
-  },
+  }
 ];

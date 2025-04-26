@@ -22,8 +22,8 @@ const RecentProjects = () => {
 
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
-          <Link href={item.link} key={item.id} target="_blank" className="sm:w-96 w-[80vw]">
-            <div className="lg:min-h-[32.5rem] h-[25rem] flex flex-col items-center justify-center">
+          <Link href={item.link} key={item.id} target="_blank">
+            <div className="lg:min-h-[32.5rem] h-[25rem] flex flex-col items-center justify-center sm:w-96 w-[80vw]">
               <PinContainer>
                 <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                   <div className="relative w-full h-full overflow-hidden lg:rounded-3xl" style={{ backgroundColor: "#13162D" }}>
@@ -39,8 +39,6 @@ const RecentProjects = () => {
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                   {item.title}
                 </h1>
-
-                {/* 🔥 Clickable Description */}
                 <p
                   onClick={(e) => {
                     e.preventDefault(); // prevent Link click
