@@ -233,7 +233,8 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/gmail.png",
+    link: "mailto:seth.aryan605@gmail.com"
   },
   {
     id: 3,
