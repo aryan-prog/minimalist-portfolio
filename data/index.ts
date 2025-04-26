@@ -1,6 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Experiences", link: "#experiences"},
   { name: "TechStack", link: "#techstack" },
   { name: "Contact", link: "#contact" },
 ];
@@ -158,19 +159,19 @@ export const techstack = [
   {
     id: 8,
     title: "C++",
-    icon: "/c.svg", // Update icon if you want a proper C++ icon
+    icon: "/c.svg", 
     href: "https://cplusplus.com/",
   },
   {
     id: 9,
     title: "Firebase",
-    icon: "/firebase.svg", // Should replace this with a Firebase logo!
+    icon: "/firebase.svg",
     href: "https://firebase.google.com/",
   },
   {
     id: 10,
     title: "Redux Toolkit",
-    icon: "/redux.svg", // Update with Redux logo if possible
+    icon: "/redux.svg",
     href: "https://redux-toolkit.js.org/",
   },
   {
@@ -196,31 +197,31 @@ export const techstack = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Engineer - SRI-Delhi",
+    desc: "Contributed to the Samsung TVPLUS app development for FHUB refrigerators by optimizing performance, resolving 100+ critical defects, boosting stability by 20%, and reducing app launch time by 15%.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/samsung.png",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    title: "Freelance App Dev Project",
+    desc: "Developed the frontend for Chatboat - an AI ChatBot generation website",
+    className: "md:col-span-2",
+    thumbnail: "/chatboat_logo.jpeg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    title: "Frontend Engineer Intern - Sharpe AI",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    className: "md:col-span-2",
+    thumbnail: "/sharpe.png",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    title: "Web Developer - SFS",
+    desc: "Single handedly developed launch website for both SFS - an edtech platform",
+    className: "md:col-span-2", 
+    thumbnail: "/sfs.jpeg",
   },
 ];
 
@@ -228,6 +229,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/aryan-prog"
   },
   {
     id: 2,
@@ -236,5 +238,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/aryan-seth-9190b1196/"
   },
 ];
