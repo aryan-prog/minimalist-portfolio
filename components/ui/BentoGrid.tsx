@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-import Lottie from "react-lottie";
 
 import { cn } from "@/utils/cn";
 
@@ -10,6 +9,9 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export const BentoGrid = ({
   className,
@@ -21,7 +23,6 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
@@ -66,9 +67,11 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
+    if (typeof window !== "undefined") {
     const text = "seth.aryan605@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+    }
   };
 
   return (
@@ -177,8 +180,7 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {copied && <Lottie options={defaultOptions} height={200} width={400} />}
               </div>
 
               <MagicButton
